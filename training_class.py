@@ -55,7 +55,7 @@ class Trainer:
     #Digunakan untuk load data yang formatnya sudah sesuai format training (file pickle)
     def load_data(self, pickle_name):
         with open(pickle_name, 'rb') as f:
-            self.data = pickle.laod(f)
+            self.data = pickle.load(f)
     
     #tag_name = tag grup pada tagging gate
     #pickle_name = nama file pickle data akan disimpan, jika kosong data tidak akan disimpan
@@ -63,6 +63,7 @@ class Trainer:
     #Build data agar mempunyai format yang sesuai untuk training model
     
     def build_data(self, tag_name, pickle_name=''):
+        tag = list()
         for ann_set in self.root.findall('AnnotationSet'):
             if 'Name' in ann_set.attrib:
                 if ann_set.attrib['Name'] == 'Original markups':
