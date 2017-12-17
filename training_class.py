@@ -101,10 +101,13 @@ class Trainer:
     #melakukan training dengan data yang sudah dibangun
     
     def train(self, labels, path=None, itteration=10, sample=1000):
-        nlp = spacy.blank('id')
-        ner = nlp.create_pipe('ner')
-        nlp.add_pipe(ner)
-        
+        if model:
+            nlp = self.model
+        else:
+            nlp = spacy.blank('id')
+            ner = nlp.create_pipe('ner')
+            nlp.add_pipe(ner)
+
         if sample>len(self.data):
             sample=len(self.data)
         

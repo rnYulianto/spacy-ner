@@ -1,0 +1,19 @@
+{
+  "pipeline":[
+    "ner"
+  ],
+  "version":"0.0.0",
+  "description":"",
+  "lang":"id",
+  "author":"",
+  "name":"model",
+  "url":"",
+  "vectors":{
+    "width":0,
+    "keys":0,
+    "vectors":0
+  },
+  "license":"",
+  "email":"",
+  "spacy_version":"2.0.3"
+}

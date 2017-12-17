@@ -1,0 +1,23 @@
+{
+  "beam_width":1,
+  "hist_size":0,
+  "hidden_depth":1,
+  "extra_labels":[
+    "Jam_Keberangkatan",
+    "Jam_Keberangkatan",
+    "Jam_Keberangkatan",
+    "Jam_Keberangkatan",
+    "Jumlah_Penumpang",
+    "Jumlah_Penumpang",
+    "Jumlah_Penumpang",
+    "Jumlah_Penumpang"
+  ],
+  "hist_width":0,
+  "nr_class":9,
+  "maxout_pieces":2,
+  "cnn_maxout_pieces":3,
+  "token_vector_width":128,
+  "hidden_width":200,
+  "pretrained_dims":0,
+  "beam_density":0.0
+}

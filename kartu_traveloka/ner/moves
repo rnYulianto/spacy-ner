@@ -1,0 +1,32 @@
+Å´transitions⁄í[
+  {
+    "label":"Nominal",
+    "move":1,
+    "name":"B-Nominal",
+    "clas":0
+  },
+  {
+    "label":"Nominal",
+    "move":2,
+    "name":"I-Nominal",
+    "clas":1
+  },
+  {
+    "label":"Nominal",
+    "move":3,
+    "name":"L-Nominal",
+    "clas":2
+  },
+  {
+    "label":"Nominal",
+    "move":4,
+    "name":"U-Nominal",
+    "clas":3
+  },
+  {
+    "label":"",
+    "move":5,
+    "name":"O",
+    "clas":4
+  }
+]
