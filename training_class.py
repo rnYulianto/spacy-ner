@@ -68,9 +68,14 @@ class Trainer:
             if 'Name' in ann_set.attrib:
                 if ann_set.attrib['Name'] == 'Original markups':
                     html = ann_set
-                elif ann_set.attrib['Name'] == tag_name:
-                    tag = ann_set
-                    
+                else:
+                    if isinstance(tag_name, str):
+                        if ann_set.attrib['Name'] == tag_name:
+                            tag = ann_set
+                    elif isinstance(tag_name, list):
+                        if ann_set.attrib['Name'] in tag_name:
+                            tag += ann_set[:len(ann_set)]
+
         td = [td_tag for td_tag in html if td_tag.attrib['Type'] == 'td']
         temp_data = list()
         
